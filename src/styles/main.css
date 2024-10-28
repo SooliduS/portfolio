@@ -18,14 +18,38 @@ body {
     color: var(--foreground);
     background: var(--background);
     font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    @apply font-Kablammo text-5xl;
+}
+h2 {
+    @apply text-3xl;
+}
+h3 {
+    @apply text-2xl font-bold;
 }
 
 .header {
     background: radial-gradient(
         circle,
-        rgba(253, 253, 253, 0.329) 0%,
-        rgba(253, 253, 253, 0.199) 100%
+        rgba(133, 133, 133, 0.856) 0%,
+        rgba(56, 56, 56, 0.801) 100%
     );
-    @apply rounded-lg px-6 py-3 w-full container border
+
+    @apply sm:rounded-lg px-6  w-full container border
         border-gray-600;
+}
+
+.h-main {
+    @apply h-[calc(100vh-96px)];
+}
+
+.min-h-main {
+    @apply min-h-[calc(100vh-96px)];
+}
+
+.bg-1 {
+    background-image: 'bg.jpg';
 }
